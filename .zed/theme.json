@@ -1,0 +1,28 @@
+{
+  "name": "OBP-Scanner-Stone",
+  "author": "Portal/Opey Development Setup",
+  "themes": [
+    {
+      "name": "OBP-Scanner-Stone",
+      "appearance": "dark",
+      "style": {
+        "background": "#1e1e1e",
+        "foreground": "#d4d4d4",
+        "cursor": "#78716C",
+        "selection": "#78716C33",
+        "selected_line_background": "#78716C11",
+        "line_number": "#858585",
+        "active_line_number": "#78716C",
+        "find_highlight": "#78716C",
+        "border": "#78716C66",
+        "panel_background": "#252526",
+        "panel_focused_border": "#78716C",
+        "tab_bar_background": "#2d2d30",
+        "tab_active_background": "#78716C88",
+        "status_bar_background": "#78716C66",
+        "title_bar_background": "#78716C44",
+        "toolbar_background": "#37373d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# ClamAV's daemon for local development: `docker compose up -d clamav`. The first start downloads the virus
+# database and takes a few minutes before clamd answers on port 3310.
+services:
+  clamav:
+    image: clamav/clamav:1.4
+    ports:
+      - "127.0.0.1:3310:3310"
+    volumes:
+      - clamav-db:/var/lib/clamav
+volumes:
+  clamav-db:
