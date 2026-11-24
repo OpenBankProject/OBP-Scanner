@@ -3,3 +3,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Backups of .env, which hold secrets
+.env.bak*

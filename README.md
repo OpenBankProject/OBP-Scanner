@@ -28,7 +28,7 @@ not: the Role it holds, CanUpdateFileScanStatusAtOneBank, lets it read only file
    clamd keeps the database in memory, about 1 to 1.5 GB, whether or not there are files to scan.
 4. `uv run scanner check` shows the engine, the consumer_id and the Platform App declaration.
 5. In the API Manager, mark the Consumer as a Platform App and grant the declared Scopes; the status page links there.
-6. `uv run scanner run` scans forever and serves the status page on http://127.0.0.1:8767 (`/status.json` as JSON).
+6. `uv run scanner run` scans forever and serves the status page on http://127.0.0.1:8767 (`/status.json` as JSON). The probes are there too: `/alive` and `/health` answer as long as the process serves HTTP, and `/status` checks OBP-API and clamd and answers 503 when either fails (JSON with `Accept: application/json`).
 
 `uv run scanner once` runs one pass and prints what it did. Tests: `uv run pytest`.
 
